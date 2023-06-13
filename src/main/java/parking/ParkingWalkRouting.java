@@ -9,6 +9,7 @@ import org.matsim.api.core.v01.population.Route;
 import org.matsim.core.population.routes.GenericRouteImpl;
 //import org.matsim.core.router.EmptyStageActivityTypes;
 import org.matsim.core.router.RoutingModule;
+import org.matsim.core.router.StageActivityTypes;
 //import org.matsim.core.router.StageActivityTypes;
 import org.matsim.facilities.Facility;
 
@@ -61,6 +62,12 @@ public class ParkingWalkRouting implements RoutingModule {
 
 			return trip;
 			
+		}
+
+		@Override
+		public StageActivityTypes getStageActivityTypes() {
+			// TODO Auto-generated method stub
+			return null;
 		}
 
 //		/***************************************************************************/
