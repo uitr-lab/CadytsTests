@@ -1,7 +1,8 @@
 package run;
 
-import ch.sbb.matsim.mobsim.qsim.SBBTransitModule;
-import ch.sbb.matsim.routing.pt.raptor.SwissRailRaptorModule;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.core.config.Config;
 import org.matsim.core.config.ConfigGroup;
@@ -12,8 +13,10 @@ import org.matsim.core.controler.OutputDirectoryHierarchy;
 import org.matsim.core.network.algorithms.MultimodalNetworkCleaner;
 import org.matsim.core.scenario.ScenarioUtils;
 
-import java.util.HashSet;
-import java.util.Set;
+import org.matsim.contrib.cadyts.car.CadytsCarModule;
+
+import ch.sbb.matsim.mobsim.qsim.SBBTransitModule;
+import ch.sbb.matsim.routing.pt.raptor.SwissRailRaptorModule;
 
 public class RailRaptor {
     public static void main(String[] args) {
@@ -26,8 +29,11 @@ public class RailRaptor {
             public void install() {
                 this.install(new SBBTransitModule());
                 this.install(new SwissRailRaptorModule());
+                // this.install(new CadytsCarModule());
             }
         });
+        
+        controler.addOverridingModule(new CadytsCarModule());
 
         // ToDo: adjust these settings
         config.strategy().addParam("Module_1", "ChangeExpBeta");
