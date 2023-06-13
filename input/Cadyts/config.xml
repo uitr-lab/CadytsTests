@@ -37,7 +37,7 @@
                 <!ENTITY numberOfThreads_global "7" >
                 <!ENTITY numberOfThreads_parallel "null" >
 
-                <!ENTITY countsFile "input/Cadyts/countsCar/counts5.xml" >
+                <!ENTITY countsFile "countsCar/counts5.xml" >
                 <!ENTITY countsScaleFactor "7.0" >
 
                 <!ENTITY inputAlightCountsFile "input/Cadyts/countsPT/counts_alighting.xml" >
@@ -452,7 +452,7 @@
     </module>
 
     <!-- ====================================================================== -->
-
+	
     <module name="planscalcroute">
 
         <!-- All the modes for which the router is supposed to generate network routes (like car) -->
