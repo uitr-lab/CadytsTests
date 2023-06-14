@@ -16,7 +16,7 @@
 - There was an invalid `dur` value in plans5.xml "0-1:0" probably meant to be 0:10
 - Missing vehicles in vehicles.xml - we generated an xml file with 0-1999 bus id's 
 - Invalid capacity values for many vehicles (type bus) we removed the transit module from config.xml (we didn't really solve this issue)
-
+- Activity names were not consistent in config.xml we copied the acitivities section from another version
 
 ## Eclipse Setup
 
