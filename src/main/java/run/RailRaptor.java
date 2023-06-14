@@ -29,12 +29,13 @@ public class RailRaptor {
             public void install() {
                 this.install(new SBBTransitModule());
                 this.install(new SwissRailRaptorModule());
-                // this.install(new CadytsCarModule());
+                this.install(new CadytsCarModule());
             }
         });
         
-        controler.addOverridingModule(new CadytsCarModule());
-
+//        controler.addOverridingModule(new SwissRailRaptorModule());
+//        controler.addOverridingModule(new CadytsCarModule());
+//        
         // ToDo: adjust these settings
         config.strategy().addParam("Module_1", "ChangeExpBeta");
         config.strategy().addParam("ModuleProbability_1", "0.7");
