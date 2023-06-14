@@ -1,5 +1,20 @@
 # CadytsTests Getting Started 
 
+
+## Run RailRaptor.java
+
+ - Add network.xml, plans5.xml, vehicles.xml, transitSchedule1bus.xml, counts5.xml to input/bijoy. These are private files and are not included in this repo.
+ - Selection the root directory, right click it and select Run As -> Maven Clean
+ - Selection the root directory, right click it and select Run As -> Maven Build ... (type "package") into goals and run
+ - Select RailRaptor.java in src>main>java>run and select Run Configurations. Make sure RailRaptor is selected
+ - Goto Arguments Tab, and add input/bijoy/config.xml in the textarea
+ - Run
+
+
+## Dataset Issues
+- 
+
+
 ## Eclipse Setup
 
  - Download and install Eclipse https://www.eclipse.org/downloads/
@@ -35,5 +50,3 @@
 ### Unit tests classes
   - Disabled all test - Cadyts repo references hard coded test input files that we do not have, and causes errors building
 
-## Data Issues
-- 
