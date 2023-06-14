@@ -13,7 +13,7 @@
 
 
 ## Dataset Issues
-- Links in network.xml that have the same to and from node, seem to have been  given an id with `pt_` prefix when referenced in the transitScheduleBus.xml file. All records in transitScheduleBus.xml with "pt_"  where removed
+- Links in network.xml that have the same to and from node, seem to have been  given an id with `pt_` prefix when referenced in the transitScheduleBus.xml file. All records in transitScheduleBus.xml with "pt_"  were removed
 - There was an invalid `dur` value in plans5.xml "0-1:0" probably meant to be 0:10
 - Missing vehicles in vehicles.xml - we generated an xml file with 0-1999 bus id's 
 - Invalid capacity values for many vehicles (type bus) we removed the transit module from config.xml (we didn't really solve this issue) we also remove `bus` type from mode options in config.xml
