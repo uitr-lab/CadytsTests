@@ -5,4 +5,8 @@
  - Download and install Eclipse 
  - Download and install Jave Runtime and JDK 
 
- - clone this repo/branch
+ - Clone this repo/branch
+ ```bash
+ git clone --branch bijoy-test https://github.com/uitr-lab/CadytsTests.git
+```
+ - Open folder in Eclipse
