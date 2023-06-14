@@ -2,8 +2,8 @@
 
 ## Eclipse Setup
 
- - Download and install Eclipse 
- - Download and install Jave Runtime and JDK 
+ - Download and install Eclipse https://www.eclipse.org/downloads/
+ - Download and install Jave Runtime and JDK https://www.oracle.com/ca-en/java/technologies/downloads/
 
  - Clone this repo/branch
  ```bash
