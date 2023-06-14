@@ -7,6 +7,7 @@
  - Select the root directory, right click it and select Run As -> Maven Clean
  - Select the root directory, right click it and select Run As -> Maven Build ... (type "package") into goals and run
  - Select RailRaptor.java in src>main>java>run and select Run Configurations. Make sure RailRaptor is selected
+ - Make sure that the Run Configuration is set up to use Java JRE 11 (You can set this in the JRE Tab or it may be set as eclipse default)
  - Goto Arguments Tab, and add input/bijoy/config.xml in the textarea
  - Run
 
@@ -22,12 +23,14 @@
 
  - Download and install Eclipse https://www.eclipse.org/downloads/
  - Download and install Jave Runtime and JDK https://www.oracle.com/ca-en/java/technologies/downloads/
+ - Also install Java 11 JDK - You will need an oracle account to access this.
 
  - Clone this repo/branch
  ```bash
  git clone --branch bijoy-test https://github.com/uitr-lab/CadytsTests.git
 ```
  - Open folder in Eclipse
+ - Set Eclipse Default JRE to 11, or you can set it in the Run Configuration for RailRaptor.java
 
 ## Code/Config Updates from Cadyts https://github.com/ChristophTraf/CadytsTests
  ### pom.xml
